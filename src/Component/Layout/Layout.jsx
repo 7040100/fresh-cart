@@ -8,7 +8,7 @@ export default function Layout() {
   return (
     <>
     <Navbar/>
-    <div className='container mx-auto p-10 mt-10'>
+    <div className='container mx-auto py-10 px-3 mt-10'>
     <Outlet></Outlet>
 
     </div>

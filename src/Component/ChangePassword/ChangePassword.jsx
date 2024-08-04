@@ -56,7 +56,7 @@ export default function ChangePassword() {
      <>
      
 
-     <div className="my-5 mt-20 w-3/4 mx-auto bg-gray-50 shadow-lg rounded bg-asset p-5">
+     <div className="my-5 mt-20 w-full md:w-3/4 mx-auto bg-gray-50 shadow-lg rounded bg-asset p-5">
 
      
      <div className='py-6 max-w-xl mx-auto'>

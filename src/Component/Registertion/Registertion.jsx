@@ -69,7 +69,7 @@ export default function Registertion() {
         initial={{ opacity: 0, x: -100 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 1 }}
-        className="my-5 mt-20 w-3/4 mx-auto bg-gray-50 shadow-lg rounded bg-asset p-5"
+        className="my-5 mt-20 w-full md:w-3/4 mx-auto bg-gray-50 shadow-lg rounded bg-asset p-5"
       >
         <div className="py-6  max-w-xl mx-auto">
           {apiError ? (

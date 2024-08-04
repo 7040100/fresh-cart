@@ -41,7 +41,7 @@ export default function ForgetPassword() {
     })
   return (
     <>
-    <div className="my-7 py-20 mb-5 mt-20 bg-slate-50 w-3/4  mx-auto  shadow-lg bg-asset p-5">
+    <div className="my-7 py-20 mb-5 mt-20 bg-slate-50 w-full md:w-3/4  mx-auto  shadow-lg bg-asset p-5">
 
     {apiError?<>
       <div className="p-4  mb-5 max-w-4xl mx-auto flex justify-center items-center  text-sm text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400" role="alert">
