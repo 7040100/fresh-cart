@@ -29,8 +29,12 @@ export default function Navbar() {
     Navigate("/login");
   }
 
+  const closeNav = function () {
+    setShowIcon(false);
+  };
+
   useEffect(() => {
-    wishCounter
+    wishCounter;
   }, [wishCounter]);
 
   return (
@@ -46,29 +50,44 @@ export default function Navbar() {
                 showicon ? "" : "hidden"
               } absolute top-full left-0 w-full xl:w-auto bg-slate-100 xl:bg-transparent gap-10 xl:static xl:flex p-4 xl:p-0 px-10 mx-auto text-xl`}
             >
-              <li className="hover:pl-2 xl:hover:pl-0 duration-500 py-2">
+              <li
+                onClick={closeNav}
+                className="hover:pl-2 xl:hover:pl-0 duration-500 py-2"
+              >
                 <NavLink className="hover:text-gray-500" to={"/"}>
                   Home
                 </NavLink>
               </li>
-              <li className="hover:pl-2 xl:hover:pl-0 duration-500 py-2">
+              <li
+                onClick={closeNav}
+                className="hover:pl-2 xl:hover:pl-0 duration-500 py-2"
+              >
                 <NavLink className="hover:text-gray-500" to={"/proudct"}>
                   Products
                 </NavLink>
               </li>
 
-              <li className="hover:pl-2 xl:hover:pl-0 duration-500 py-2">
+              <li
+                onClick={closeNav}
+                className="hover:pl-2 xl:hover:pl-0 duration-500 py-2"
+              >
                 <NavLink className="hover:text-gray-500" to={"/categories"}>
                   Catagories
                 </NavLink>
               </li>
 
-              <li className="hover:pl-2 xl:hover:pl-0 duration-500 py-2">
+              <li
+                onClick={closeNav}
+                className="hover:pl-2 xl:hover:pl-0 duration-500 py-2"
+              >
                 <NavLink className="hover:text-gray-500" to={"/brands"}>
                   Brands
                 </NavLink>
               </li>
-              <li className="hover:pl-2 xl:hover:pl-0 duration-500 py-2">
+              <li
+                onClick={closeNav}
+                className="hover:pl-2 xl:hover:pl-0 duration-500 py-2"
+              >
                 <NavLink className="hover:text-gray-500" to="allorders">
                   Orders
                 </NavLink>

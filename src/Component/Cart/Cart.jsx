@@ -167,7 +167,7 @@ export default function Cart() {
                               </h6>
                             </div>
                             <button
-                              onClick={() => deleteCart(product.product.id)}
+                              onClick={() => deleteItem(product.product.id)}
                               className="mt-5 text-red-400 text-3xl hover:scale-105 duration-300"
                             >
                               <i className="fa-solid fa-trash"></i>
@@ -177,7 +177,7 @@ export default function Cart() {
                             <div className="flex items-center h-full">
                               <button
                                 onClick={() =>
-                                  updatefromCart(
+                                  UpdatCart2(
                                     product.product.id,
                                     product.count - 1
                                   )
@@ -222,7 +222,7 @@ export default function Cart() {
                               />
                               <button
                                 onClick={() =>
-                                  updatefromCart(
+                                  UpdatCart(
                                     product.product.id,
                                     product.count + 1
                                   )
