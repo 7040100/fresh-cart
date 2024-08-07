@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Slider from "react-slick";
+import LazyLoad from 'react-lazy-load';
+
 
 import MainSlider2 from '../../assets/slider-image-2.jpeg'
 import Slider1 from '../../assets/slider-image-3.jpeg'
@@ -26,15 +28,49 @@ export default function MainSlider() {
     <div className="flex flex-wrap py-3">
       <div className=" w-full md:w-3/4 lg:w-3/4 xl:w-3/4 " >
       <Slider {...settings}>
-      <img src={MainSlider2}  className='w-full h-[400px]' />
-      <img src={Slider3}  className='w-full h-[400px]' />
-      <img src={Slider4}  className='w-full h-[400px]' />
+
+        <LazyLoad >
+        <img src={MainSlider2}  className='w-full h-[400px]' />
+
+        </LazyLoad>
+
+        <LazyLoad >
+        <img src={Slider3}  className='w-full h-[400px]' />
+
+        </LazyLoad>
+
+        <LazyLoad >
+        <img src={Slider4}  className='w-full h-[400px]' />
+
+        </LazyLoad>
+        
+      
+       
+    
+        
+        
+       
+     
+      
+      
 
     </Slider>
       </div>
       <div className=" w-full md:w-1/4 lg:w-1/4 xl:w-1/4 ">
+
+      <LazyLoad >
       <img src={Slider1}  className='w-full h-[200px]' />
+
+        </LazyLoad>
+      <LazyLoad >
       <img src={Slider2}  className='w-full h-[200px]' />
+
+        </LazyLoad>
+      
+      
+     
+  
+     
 
       </div>
     </div>
