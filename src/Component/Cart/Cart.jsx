@@ -107,10 +107,10 @@ export default function Cart() {
       ) : (
         <div>
           {isloading ? (
-            <section className=" relative  z-10 after:contents-[''] after:absolute after:z-0 after:h-full xl:after:w-1/3 after:top-0 after:right-0 after:bg-gray-50">
-            <div className="w-full gap-7 max-w-7xl px-4 md:px-5 lg-6 mx-auto relative z-10">
-              <div className="grid grid-cols-12">
-                <div className="col-span-12 xl:col-span-8 lg:pr-8 pt-14 pb-8 lg:py-24 w-full max-xl:max-w-3xl max-xl:mx-auto">
+            <section className=" relative   z-10 after:contents-[''] after:absolute after:z-0 after:h-full xl:after:w-1/3 after:top-0 after:right-0 after:bg-gray-50">
+            <div className="w-full  max-w-7xl px-4 md:px-5 lg-6 mx-auto relative z-10">
+              <div className="grid  grid-cols-12">
+                <div className="col-span-12  xl:col-span-8 lg:pr-8 pt-14 pb-8 lg:py-24 w-full max-xl:max-w-3xl max-xl:mx-auto">
                   <div className="flex items-center justify-between pb-8 border-b border-gray-300">
                     <h2 className="font-manrope font-bold text-3xl leading-10 text-black">
                       Shopping Cart
@@ -144,7 +144,7 @@ export default function Cart() {
                     return (
                       <div
                         key={product?.product?.id}
-                        className="flex flex-col min-[500px]:flex-row min-[500px]:items-center gap-5 border-b border-gray-200 group"
+                        className="flex  flex-col min-[500px]:flex-row min-[500px]:items-center gap-12 border-b border-gray-200 group"
                       >
                         <div className="w-full md:max-w-[126px]">
                           <img
@@ -262,7 +262,7 @@ export default function Cart() {
                             </div>
                           </div>
                           <div className="flex items-center max-[500px]:justify-center md:justify-end max-md:mt-3 h-full">
-                            <p className="font-bold text-lg leading-8 text-gray-600 text-center transition-all duration-300 group-hover:text-indigo-600">
+                            <p className="font-bold text-lg m-6 leading-8 text-gray-600 text-center transition-all duration-300 group-hover:text-indigo-600">
                               {product?.price * product?.count} EGP
                             </p>
                           </div>
@@ -275,7 +275,7 @@ export default function Cart() {
                         <button className="w-full text-center bg-indigo-600 rounded-xl py-3 px-6 font-semibold text-lg text-white transition-all duration-500 hover:bg-indigo-700">
                           Checkout
                           <i className="fa-solid text-center text-sm lg:text-medium fa-arrow-right fa-fade fa-lg text-white"></i>{" "}
-                    {cartPrice}EGP
+                    {cartPrice }EGP
                         </button>
                       </Link>
                   </div>
